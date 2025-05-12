@@ -1,7 +1,10 @@
-module(name = "main", version="0.0.0")
+module(
+    name = "main",
+    version = "0.0.0",
+)
 
-bazel_dep(name = "bazel_compile_commands")
+bazel_dep(name = "wolfd_bazel_compile_commands")
 local_path_override(
-    module_name = "bazel_compile_commands",
+    module_name = "wolfd_bazel_compile_commands",
     path = "../",
 )
