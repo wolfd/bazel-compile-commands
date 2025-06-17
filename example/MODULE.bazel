@@ -1,3 +1,7 @@
+"""
+Example usage of `wolfd_bazel_compile_commands`.
+"""
+
 module(
     name = "main",
     version = "0.0.0",
