@@ -11,13 +11,13 @@ If you're using the [VS Code clangd plugin](https://marketplace.visualstudio.com
   ],
 ```
 
-To run, use `bazel run @bazel_compile_commands//:generate_compile_commands -- <optional query pattern>`
+To run, use `bazel run @wolfd_bazel_compile_commands//:generate_compile_commands -- <optional query pattern>`
 
 Consider adding an alias to your root BUILD.bazel:
 ```
 alias(
     name = "compile_commands",
-    actual = "@bazel_compile_commands//:generate_compile_commands",
+    actual = "@wolfd_bazel_compile_commands//:generate_compile_commands",
 )
 ```
 And then all you need to do is run `bazel run compile_commands`
